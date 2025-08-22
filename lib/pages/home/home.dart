@@ -21,8 +21,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
   Widget build(BuildContext context) {
     final counter = ref.read(counterProvider);
     final name = ref.read(productNameProvider);
-    final numbers = ref.read(numbersProvider);
-    final car = ref.read(carProvider);
+    final numbers = ref.read(numbersProvider); 
 
     return Scaffold(
       appBar: AppBar(
@@ -36,8 +35,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
             Text("$counter", style: TextStyle(fontSize: 32)),
             Text(name, style: TextStyle(fontSize: 32)),
             Text(numbers.toString(), style: TextStyle(fontSize: 32)),
-            Text("${car.brand} ${car.name}", style: TextStyle(fontSize: 32)),
-          ],
+           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
