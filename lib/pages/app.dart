@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riverpod101/pages/counter/counter.dart';
 import 'package:riverpod101/pages/home/home.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData( 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(),
+      home: const CounterPage(),
     );
   }
 }
